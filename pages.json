@@ -1,0 +1,123 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "uni-app"
+			}
+		}
+		,{
+		    "path" : "pages/Register/Register",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		}
+		,{
+            "path" : "pages/Map/Map",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false,
+				"app-plus": {  
+				                "subNVues":[{  
+				                    "id": "sub_park", // 唯一标识  
+				                    "path": "pages/Map/Info/Park", // 页面路径  
+				                    "type": "popup",  
+				                    "style": {  
+				                        "margin": "auto",
+				                        "width": "80%",
+				                        "height": "600rpx"
+				                    }  
+				                }]  
+				            }  
+            }
+            
+        }
+        ,{
+            "path" : "pages/Login/Login",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+        }
+        ,{
+            "path" : "pages/User/User",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/Order/Order",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": true
+            }
+            
+        }
+        ,{
+            "path" : "pages/User/Info/CarNum",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/User/Info/Password",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/User/Info/PhoneNum",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+	    "color": "#7A7E83",
+	    "selectedColor": "#3cc51f",
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+	    "list": [{
+	        "pagePath": "pages/Map/Map",
+	        "iconPath": "/static/tarbar/home1.png",
+	        "selectedIconPath": "/static/tarbar/home2.png",
+	        "text": "首页"
+	    }, {
+	        "pagePath": "pages/Order/Order",
+			"iconPath": "/static/tarbar/discover1.png",
+			"selectedIconPath": "/static/tarbar/discover2.png",
+	        "text": "订单"
+	    }, {
+	        "pagePath": "pages/User/User",
+			"iconPath": "/static/tarbar/personal1.png",
+			"selectedIconPath": "/static/tarbar/personal2.png",
+	        "text": "我的"
+	    }]
+	}
+	
+	
+	
+}
